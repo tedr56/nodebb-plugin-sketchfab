@@ -1,0 +1,14 @@
+{
+	"id": "nodebb-plugin-sketchfab",
+	"name": "NodeBB Sketchfab Plugin",
+	"description": "NodeBB Plugin that allows users to embed Sketchfab 3D models inline in their posts.",
+	"url": "https://github.com/tedr56/nodebb-plugin-sketchfab",
+	"library": "./library.js",
+	"hooks": [
+		{ "hook": "filter:post.parse", "method": "parse", "callbacked": true }
+	],
+	"staticDir": "./static",
+	"css": [
+		"style.css"
+	]
+}
