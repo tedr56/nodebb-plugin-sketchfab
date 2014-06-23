@@ -2,7 +2,7 @@
 	"use strict";
 
 	var Sketchfab = {},
-		embed = '<iframe frameborder="0" height="480" width="854" allowFullScreen webkitallowfullscreen="true" mozallowfullscreen="true" src="http://sketchfab.com/embed/$1?autostart=0&transparent=0&autospin=0&controls=1"></iframe>';
+		embed = '<iframe class="sketchfab-embed" frameborder="0" height="480" width="854" allowFullScreen webkitallowfullscreen="true" mozallowfullscreen="true" src="http://sketchfab.com/embed/$1?autostart=0&transparent=0&autospin=0&controls=1"></iframe>';
 
 
 

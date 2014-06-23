@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sketchfab",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "NodeBB Sketchfab Plugin",
   "main": "library.js",
   "scripts": {
@@ -17,16 +17,11 @@
     "3d",
     "embed"
   ],
-  "author": {
-    "name": "tedr56",
-    "email": "ted.r@hotmail.fr"
-  },
+  "author": "tedr56 <ted.r@hotmail.fr>",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/sketchfab/nodebb-plugin-sketchfab/issues"
   },
-  "readme": "",
-  "readmeFilename": "README.md",
-  "_id": "nodebb-plugin-sketchfab@0.0.1",
-  "_from": "nodebb-plugin-sketchfab@~0.0.1"
+  "_from": "nodebb-plugin-sketchfab@~0.0.1",
+  "homepage": "https://github.com/tedr56/nodebb-plugin-sketchfab"
 }
