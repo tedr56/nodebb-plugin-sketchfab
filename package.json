@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sketchfab",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "NodeBB Sketchfab Plugin",
   "main": "library.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "url": "https://github.com/tedr56/nodebb-plugin-sketchfab"
   },
   "nbbpm": {
-    "compatibility": "^0.5.0"
+    "compatibility": "^0.6.0"
   },
   "keywords": [
     "nodebb",
@@ -25,6 +25,6 @@
   "bugs": {
     "url": "https://github.com/sketchfab/nodebb-plugin-sketchfab/issues"
   },
-  "_from": "nodebb-plugin-sketchfab@~0.0.1",
+  "_from": "nodebb-plugin-sketchfab@~0.2.0",
   "homepage": "https://github.com/tedr56/nodebb-plugin-sketchfab"
 }

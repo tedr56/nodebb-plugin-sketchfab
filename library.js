@@ -4,13 +4,16 @@
     var Sketchfab = {},
         embed = '<iframe class="sketchfab-embed" frameborder="0" height="480" width="854" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" onmousewheel="" src="https://sketchfab.com/models/$1/embed"></iframe>';
 
-http://sketchfab.com/embed/bd6ed505658e4601850bf36f0abb3bf8
+    var embedUrl = /<a href="(?:https?:\/\/)?(?:www\.)?(?:sketchfab\.com)\/?(?:models)\/?(.+)">.+<\/a>/g;
 
-	Sketchfab.parse = function(postContent, callback) {
-		// modified from http://stackoverflow.com/questions/7168987/
-		postContent = postContent.replace(/<a href="(?:https?:\/\/)?(?:www\.)?(?:sketchfab\.com)\/?(?:models)\/?(.+)">.+<\/a>/g, embed);
-		
-		callback(null, postContent);
+	Sketchfab.parse = function(data, callback) {
+	    if (!data || !data.postData || !data.postData.content) {
+            return callback(null, data);
+        }
+        if (data.postData.content.match(embedUrl)) {
+            data.postData.content = data.postData.content.replace(embedUrl, embed);
+        }
+        callback(null, data);
 	};
 
 	module.exports = Sketchfab;
