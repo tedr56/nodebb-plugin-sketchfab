@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-sketchfab",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "NodeBB Sketchfab Plugin",
   "main": "library.js",
   "scripts": {
